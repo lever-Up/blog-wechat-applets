@@ -1,25 +1,16 @@
-<style lang="less">
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-</style>
-
 <script>
 import wepy from 'wepy'
 import 'wepy-async-function'
 
 import { setStore } from 'wepy-redux'
 import configStore from './store'
+import globalData from './global-data.js'
 
-const store = configStore()
-setStore(store)
+const store = configStore();
+setStore(store);
 
 export default class extends wepy.app {
+  globalData = globalData;
   config = {
     pages: [
       'pages/index'
@@ -30,14 +21,10 @@ export default class extends wepy.app {
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
     }
-  }
-
-  globalData = {
-    userInfo: null
-  }
+  };
 
   constructor () {
-    super()
+    super();
     this.use('requestfix')
   }
 
@@ -55,7 +42,7 @@ export default class extends wepy.app {
 
   async testAsync () {
     const data = await this.sleep(3)
-    console.log(data)
+    console.log(111, data)
   }
 
   getUserInfo(cb) {
