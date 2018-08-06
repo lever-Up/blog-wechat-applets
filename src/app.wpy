@@ -13,7 +13,7 @@ export default class extends wepy.app {
   globalData = globalData;
   config = {
     pages: [
-      'pages/index'
+      'pages/example/test'
     ],
     window: {
       backgroundTextStyle: 'light',

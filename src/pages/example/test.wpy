@@ -49,7 +49,7 @@
 
     <panel>
       <view class="title" slot="title">测试组件Repeat</view>
-      <repeat for="" index="index" item="item" key="key">
+      <repeat for="{{groupList}}" index="index" item="item" key="key">
         <group :grouplist="item" :indexa="index"></group>
       </repeat>
     </panel>
@@ -63,7 +63,7 @@
   </view>
 </template>
 
-<script src="./index.js"></script>
+<script src="./test.js"></script>
 <style lang="less">
-  @import "./index.less";
+  @import "./test.less";
 </style>

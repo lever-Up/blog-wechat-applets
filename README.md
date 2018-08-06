@@ -11,7 +11,7 @@
       | --actions
       | --reducers
       | --types
-      index.js
+      test.js
   
   wepy.config.js  
 ````

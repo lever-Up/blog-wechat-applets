@@ -1,28 +1,28 @@
 <style lang="less">
   .panel {
     width: 100%;
-    margin-top: 20rpx;
+    margin-top: 20 rpx;
     text-align: left;
     font-size: 12px;
-    padding-top: 20rpx;
-    padding-left: 50rpx;
-    padding-bottom: 20rpx;
+    padding-top: 20 rpx;
+    padding-left: 50 rpx;
+    padding-bottom: 20 rpx;
     border: 1px solid #ccc;
 
     .title {
-      padding-bottom: 20rpx;
+      padding-bottom: 20 rpx;
       font-size: 14px;
       font-weight: bold;
     }
     .info {
-      padding: 15rpx;
+      padding: 15 rpx;
     }
     .testcounter {
-      margin-top: 15rpx;
+      margin-top: 15 rpx;
       position: absolute;
     }
     .counterview {
-      margin-left: 120rpx;
+      margin-left: 120 rpx;
     }
   }
 </style>
@@ -36,7 +36,7 @@
   </view>
 </template>
 <script>
-  import wepy from 'wepy'
+  import wepy from 'wepy';
 
   export default class Panel extends wepy.component {
   }
